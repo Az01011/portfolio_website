@@ -16,8 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     var observer = new IntersectionObserver(handleIntersection, observerOptions);
-
-    // Get all elements that we want to animate
     var scrollElements = document.querySelectorAll('.scroll-fade, .scroll-fade-left, .scroll-fade-right');
     
     // Observe each element

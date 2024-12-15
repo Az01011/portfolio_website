@@ -316,25 +316,25 @@ textarea.custom-input {
 /* footer css */
 .footer {
     background: linear-gradient(180deg, #007bff75, #011d3c);
-    padding: 10px 0; /* Reduced overall vertical padding */
-    margin-top: 0; /* Remove unnecessary top margin */
+    padding: 10px 0; 
+    margin-top: 0; 
 }
 
 .footer .row {
-    margin-bottom: 5px; /* Add minimal spacing between content rows */
+    margin-bottom: 5px; 
 }
 
 .footer-col {
     text-align: center;
     color: white;
-    padding: 0; /* Remove unnecessary padding */
+    padding: 0; 
 }
 
 .footer-links {
     display: flex;
     justify-content: center;
-    gap: 15px; /* Reduced horizontal gap */
-    margin-bottom: 5px; /* Tight spacing below links */
+    gap: 15px; 
+    margin-bottom: 5px; 
 }
 
 .footer-links a {
@@ -346,7 +346,7 @@ textarea.custom-input {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Reduced horizontal gap */
+    gap: 10px; 
 }
 
 .social-links a {
@@ -365,8 +365,8 @@ textarea.custom-input {
 
 /*Css for contact modal */
 .modal-content {
-    background: linear-gradient(145deg, #007bff75, #011d3c);
-    color: white;
+    background: cornsilk; 
+    color: #000; 
     border-radius: 15px;
     border: none;
 }
@@ -397,4 +397,46 @@ textarea.custom-input {
 .social-links i:hover {
     transform: scale(1.2);
     color: #00d4ff;
+}
+
+/* css for pref work sections */
+#preferred-work {
+    background-color: #f8f9fa;
+}
+
+#preferred-work h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #007bff;
+}
+
+#preferred-work .card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#preferred-work .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+#preferred-work .card i {
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+#preferred-work .card:hover i {
+    color: #0056b3;
+}
+
+#preferred-work .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+#preferred-work .card-text {
+    font-size: 1rem;
+    color: #6c757d;
 }
