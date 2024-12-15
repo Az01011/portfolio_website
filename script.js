@@ -18,8 +18,19 @@ document.addEventListener('DOMContentLoaded', function() {
     var observer = new IntersectionObserver(handleIntersection, observerOptions);
     var scrollElements = document.querySelectorAll('.scroll-fade, .scroll-fade-left, .scroll-fade-right');
     
-    // Observe each element
     scrollElements.forEach(function(element) {
         observer.observe(element);
+    });
+});
+
+
+
+/*dark mode toggle button */
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleButton = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+
+    toggleButton.addEventListener('click', function () {
+        body.classList.toggle('dark-mode');
     });
 });

@@ -440,3 +440,44 @@ textarea.custom-input {
     font-size: 1rem;
     color: #6c757d;
 }
+
+/* dark mode cs */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.hero.dark-mode {
+    background: linear-gradient(0deg, #1f1f1f, #0a0a0a);
+}
+
+.navbar.dark-mode {
+    background-color: #1f1f1f;
+}
+
+.section-title.dark-mode {
+    color: #ffffff;
+}
+
+.card.dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: none;
+}
+
+.footer.dark-mode {
+    background: linear-gradient(180deg, #1f1f1f, #0a0a0a);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#dark-mode-toggle {
+    background-color: green;
+    color: white; 
+    border: none; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #005500; 
+    transform: scale(1.1);
+}
