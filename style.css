@@ -291,3 +291,53 @@ textarea.custom-input {
     font-size: 1rem;
     line-height: 1.6;
 }
+
+/* footer css */
+.footer {
+    background: linear-gradient(180deg, #007bff75, #011d3c);
+    padding: 10px 0; /* Reduced overall vertical padding */
+    margin-top: 0; /* Remove unnecessary top margin */
+}
+
+.footer .row {
+    margin-bottom: 5px; /* Add minimal spacing between content rows */
+}
+
+.footer-col {
+    text-align: center;
+    color: white;
+    padding: 0; /* Remove unnecessary padding */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Reduced horizontal gap */
+    margin-bottom: 5px; /* Tight spacing below links */
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Reduced horizontal gap */
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    margin: 5px 0 0 0; /* Reduce top margin */
+    padding: 0; /* Remove extra padding */
+}
