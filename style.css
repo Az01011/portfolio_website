@@ -1,0 +1,293 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    background: linear-gradient(0deg, #007bff75, #011d3c); 
+}
+
+.hero p.lead {
+    opacity: 0.9;
+}
+
+.hero h1 {
+    margin-bottom: 1.5rem;
+}
+
+#container_2 {
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    margin: 20px;
+}
+
+/*
+#container_2:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+    */
+
+.about-me-header {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center !important;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.social-icon {
+    color: white;
+    font-size: 24px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+
+.social-icon .fa-github:hover {
+    color: #6e5494;
+}
+
+.social-icon .fa-linkedin:hover {
+    color: #0077b5;
+}
+
+/* Animation classes */
+.scroll-fade, .scroll-fade-left, .scroll-fade-right {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.scroll-fade {
+    transform: translateY(20px);
+}
+
+.scroll-fade-left {
+    transform: translateX(-100px);
+}
+
+.scroll-fade-right {
+    transform: translateX(100px);
+}
+
+/* Classes that will be added when element is visible */
+.scroll-fade.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-fade-left.appear {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scroll-fade-right.appear {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.card {
+    height: 100%;  /* Makes all cards take full height of their container */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card-body {
+    flex: 1;  /* Makes the card body expand to fill available space */
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text {
+    flex-grow: 1;  /* Allows text to expand while maintaining uniform card size */
+}
+
+.card-img-top {
+    aspect-ratio: 16 / 9;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Timeline styling */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #007bff;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 50px;
+}
+
+.timeline-point {
+    position: absolute;
+    left: 16px;
+    width: 10px;
+    height: 10px;
+    background: #007bff;
+    border-radius: 50%;
+}
+
+.timeline-content {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.timeline-content h4 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Optional animation for timeline items */
+.timeline-item {
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.timeline-item:nth-child(1) { animation-delay: 0.2s; }
+.timeline-item:nth-child(2) { animation-delay: 0.4s; }
+.timeline-item:nth-child(3) { animation-delay: 0.6s; }
+
+
+.contact-section {
+    background: linear-gradient(180deg, #007bff75, #011d3c);
+    padding: 80px 0;
+}
+
+.contact-container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-container h2 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.custom-input {
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    border-radius: 15px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.custom-input:focus {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+
+.send-button {
+    background: white;
+    color: #007bff;
+    border: none;
+    border-radius: 15px;
+    padding: 12px 40px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.send-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+textarea.custom-input {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* css nd stuff for the interests section */
+.flip-card {
+    background-color: transparent;
+    height: 250px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card-front {
+    background: linear-gradient(145deg, #007bff75, #011d3c);
+    color: white;
+}
+
+.flip-card-front i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.flip-card-back {
+    background: white;
+    color: #011d3c;
+    transform: rotateY(180deg);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.flip-card-back p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
